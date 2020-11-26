@@ -18,7 +18,7 @@ print(n)                                                         #sequences
 fragment = [['CG'], []]                                          #experimentation with arrays
 mx = 0
 for line in range(0,len(n)):                                     
-        fragment[1].append(n[line].count(fragment[0][0]))        #make a list out of the 2nd array
+        fragment[1].append(n[line].count(fragment[0][0]))        #append each previous value of the 2nd array to create a readable list
         matplotlib.pyplot.plot(line+1, fragment[1][line], 'bo')  #draw graph
         matplotlib.pyplot.xlabel('Sequence number')
         matplotlib.pyplot.ylabel('numbers of CGs in sequence')
